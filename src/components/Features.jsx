@@ -90,7 +90,7 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
               }}
             />
             <TiLocationArrow className="relative z-20" />
-            <p className="relative z-20">coming soon</p>
+            <p className="relative z-20">View</p>
           </div>
         )}
       </div>
@@ -105,16 +105,15 @@ const Features = () => (
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-32">
         <p className="font-circular-web text-lg text-blue-100">
-          Into the Metagame Layer
+          WE ARE VALORANT
         </p>
         <AnimatedTitle
-          title="The Metagame <br /> Layer"
+          title="DEFY THE <br /> LIMITS OF GAMING"
           containerClass="mt-5 !text-blue-100"
         />
         <p className="max-w-md font-circular-web text-lg text-blue-100 opacity-50">
-          Immerse yourself in a rich and ever-evolving universe where a vibrant
-          array of products converge into an interconnected overlay experience
-          on your world.
+          Compete in intense 5v5 battles with precise gunplay and tactical abilities.
+Outsmart opponents across 13 rounds in Competitive, Unranked, Deathmatch, and Spike Rush.
         </p>
       </div>
 
@@ -123,10 +122,10 @@ const Features = () => (
           src="videos/feature-1.mp4"
           title={
             <>
-              radia<b>n</b>t
+              ENTER THE BATTLEFIE<b>L</b>D
             </>
           }
-          description="A cross-platform metagame app, turning your activities across Web2 and Web3 games into a rewarding adventure."
+          description="Step into high-stakes tactical combat where every decision can lead your team to victory."
           isComingSoon
         />
       </BentoTilt>
@@ -137,10 +136,10 @@ const Features = () => (
             src="videos/feature-2.mp4"
             title={
               <>
-                zig<b>m</b>a
+                Age<b>n</b>t<b>s</b>
               </>
             }
-            description="An anime and gaming-inspired NFT collection - the IP primed for expansion."
+            description="Choose from unique agents, each bringing their own skills and playstyle to the battlefield."
             isComingSoon
           />
         </BentoTilt>
@@ -150,10 +149,10 @@ const Features = () => (
             src="videos/feature-3.mp4"
             title={
               <>
-                n<b>e</b>xus
+                A<b>b</b>ilities
               </>
             }
-            description="A gamified social hub, adding a new dimension of play to your identity, social activity and gaming sessions."
+            description="Master powerful abilities that can shift the momentum of every round."
             isComingSoon
           />
         </BentoTilt>
@@ -163,33 +162,42 @@ const Features = () => (
             src="videos/feature-4.mp4"
             title={
               <>
-                az<b>u</b>l
+                M<b>a</b>ps
               </>
             }
-            description="A agent of change in the gaming world, azul is a companion that grows with you."
+            description="Battle across dynamic maps designed for strategy, teamwork, and intense fights."
+            isComingSoon
+          />
+        </BentoTilt>
+        
+        <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
+          <BentoCard
+            src="videos/feature-4.mp4"
+            title={
+              <>
+                pl<b>a</b>y <b>m</b>odes
+              </>
+            }
+            description="Experience multiple game modes ranging from competitive matches to fast-paced casual action."
+            isComingSoon
+          />
+        </BentoTilt>
+        
+        <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
+          <BentoCard
+            src="videos/feature-6.mp4"
+            title={
+              <>
+                p<b>r</b>e<b>m</b>ium We<b>a</b>pons Skin<b>s</b>
+              </>
+            }
+            description="Customize your arsenal with stunning weapon skins featuring stylish designs and effects.
+
+"
             isComingSoon
           />
         </BentoTilt>
 
-        <BentoTilt className="bento-tilt_2">
-          <div className="flex size-full flex-col justify-between bg-violet-300 p-5">
-            <h1 className="bento-title special-font max-w-64 text-black">
-              M<b>o</b>re co<b>m</b>ing s<b>o</b>on.
-            </h1>
-
-            <TiLocationArrow className="m-5 self-end text-5xl" />
-          </div>
-        </BentoTilt>
-
-        <BentoTilt className="bento-tilt_2">
-          <video
-            src="videos/feature-5.mp4"
-            loop
-            muted
-            autoPlay
-            className="size-full object-cover object-center"
-          />
-        </BentoTilt>
       </div>
     </div>
   </section>

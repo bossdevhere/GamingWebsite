@@ -27,7 +27,7 @@ const useWindowScroll = () => {
   return state;
 };
 
-const navItems = ["Nexus", "Vault", "Prologue", "About", "Contact"];
+const navItems = ["News", "Agents", "Maps", "About", "Contact"];
 
 const Navbar = () => {
   const [isAudioPlaying, setIsAudioPlaying] = useState(false);
@@ -89,11 +89,11 @@ const Navbar = () => {
       <header className="absolute top-1/2 w-full -translate-y-1/2">
         <nav className="flex size-full items-center justify-between p-4">
           <div className="flex items-center gap-7">
-            <img src="/img/logo.png" alt="logo" className="w-10" />
+            <img src="/img/logo.webp" alt="logo" className="w-12" />
 
-            <button className="group relative z-10 w-fit cursor-pointer overflow-hidden rounded-full bg-violet-50 px-7 py-3 text-black hidden items-center justify-center gap-1 md:flex">
+            <button className="group relative z-10 w-fit cursor-pointer overflow-hidden rounded-full bg-red-500 px-7 py-3 text-white hidden items-center justify-center gap-1 md:flex">
               <span className="relative inline-flex overflow-hidden font-general text-xs uppercase">
-                <div>Products</div>
+                <div>INSTALL NOW</div>
               </span>
               <TiLocationArrow />
             </button>

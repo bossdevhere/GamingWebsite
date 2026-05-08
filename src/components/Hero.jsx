@@ -141,17 +141,17 @@ const Hero = () => {
         <div className="absolute left-0 top-0 z-40 size-full">
           <div className="mt-24 px-5 sm:px-10">
             <h1 className="special-font hero-heading text-blue-100">
-              redefi<b>n</b>e
+              VALORANT
             </h1>
             <p className="mb-5 max-w-64 font-robert-regular text-blue-100">
-              Enter the Metagame Layer <br /> Unleash the Play Economy
+              VALORANT — A 5v5 tactical shooter featuring agents <br /> with unique abilities
             </p>
 
             <Button
-              id="watch-trailer"
-              title="Watch Trailer"
+              id="PLAY FOR FREE"
+              title="PLAY FOR FREE"
               leftIcon={<TiLocationArrow />}
-              containerClass="bg-yellow-300 flex-center gap-1"
+              containerClass="bg-red-500 flex-center gap-1 bold-font text-white hover:bg-red-600"
             />
           </div>
         </div>
