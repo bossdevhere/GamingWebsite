@@ -151,7 +151,7 @@ const Hero = () => {
               id="PLAY FOR FREE"
               title="PLAY FOR FREE"
               leftIcon={<TiLocationArrow />}
-              containerClass="bg-red-500 flex-center gap-1 bold-font text-white hover:bg-red-600"
+              containerClass="bg-red-500 flex-center gap-1 bold-font text-white hover:bg-red-500"
             />
           </div>
         </div>

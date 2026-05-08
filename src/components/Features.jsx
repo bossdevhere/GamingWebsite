@@ -56,15 +56,24 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
   const handleMouseEnter = () => setHoverOpacity(1);
   const handleMouseLeave = () => setHoverOpacity(0);
 
+  const isVideo = src.endsWith(".mp4");
+
   return (
     <div className="relative size-full">
-      <video
-        src={src}
-        loop
-        muted
-        autoPlay
-        className="absolute left-0 top-0 size-full object-cover object-center"
-      />
+      {isVideo ? (
+        <video
+          src={src}
+          loop
+          muted
+          autoPlay
+          className="absolute left-0 top-0 size-full object-cover object-center"
+        />
+      ) : (
+        <img
+          src={src}
+          className="absolute left-0 top-0 size-full object-cover object-center"
+        />
+      )}
       <div className="relative z-10 flex size-full flex-col justify-between p-5 text-blue-100">
         <div>
           <h1 className="bento-title special-font">{title}</h1>
@@ -79,7 +88,7 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
             onMouseMove={handleMouseMove}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            className="border-hsla relative flex w-fit cursor-pointer items-center gap-1 rounded-full bg-black px-5 py-2 text-[10px] uppercase text-white/20"
+            className="border-hsla relative flex w-fit cursor-pointer items-center gap-1 rounded-full bg-white px-5 py-2 text-[10px] uppercase text-black"
           >
             {/* Radial gradient hover effect */}
             <div
@@ -172,7 +181,7 @@ Outsmart opponents across 13 rounds in Competitive, Unranked, Deathmatch, and Sp
         
         <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
           <BentoCard
-            src="videos/feature-4.mp4"
+            src="videos/feature-5.mp4"
             title={
               <>
                 pl<b>a</b>y <b>m</b>odes
