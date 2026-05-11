@@ -4,6 +4,7 @@ import { TiLocationArrow } from "react-icons/ti";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import CachedVideo from "./CachedVideo";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -78,7 +79,9 @@ const Hero = () => {
     });
   });
 
-  const getVideoSrc = (index) => `videos/hero-${index}.mp4`;
+  const getVideoSrc = (index) =>
+    `https://pub-cc5065c69cf847a6b697aeefac2a01df.r2.dev/hero-${index}.mp4`;
+
 
   return (
     <div className="relative h-dvh w-screen overflow-x-hidden">
@@ -102,8 +105,7 @@ const Hero = () => {
               onClick={handleMiniVdClick}
               className="origin-center scale-50 opacity-0 transition-all duration-500 ease-in hover:scale-100 hover:opacity-100"
             >
-              <video
-                ref={nextVideoRef}
+              <CachedVideo
                 src={getVideoSrc(upcomingVideoIndex)}
                 loop
                 muted
@@ -114,7 +116,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <video
+          <CachedVideo
             ref={nextVideoRef}
             src={getVideoSrc(currentIndex)}
             loop
@@ -124,7 +126,7 @@ const Hero = () => {
             onLoadedData={handleVideoLoad}
           />
 
-          <video
+          <CachedVideo
             src={getVideoSrc(currentIndex === totalVideos ? 1 : currentIndex)}
             autoPlay
             loop

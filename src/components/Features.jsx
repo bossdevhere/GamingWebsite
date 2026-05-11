@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import { TiLocationArrow } from "react-icons/ti";
+import CachedVideo from "./CachedVideo";
 
 export const BentoTilt = ({ children, className = "" }) => {
   const [transformStyle, setTransformStyle] = useState("");
@@ -61,7 +62,7 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
   return (
     <div className="relative size-full">
       {isVideo ? (
-        <video
+        <CachedVideo
           src={src}
           loop
           muted
@@ -128,7 +129,7 @@ Outsmart opponents across 13 rounds in Competitive, Unranked, Deathmatch, and Sp
 
       <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
         <BentoCard
-          src="videos/feature-1.mp4"
+          src="https://pub-cc5065c69cf847a6b697aeefac2a01df.r2.dev/feature-1.mp4"
           title={
             <>
               ENTER THE BATTLEFIE<b>L</b>D
@@ -142,7 +143,7 @@ Outsmart opponents across 13 rounds in Competitive, Unranked, Deathmatch, and Sp
       <div className="grid h-[135vh] w-full grid-cols-2 grid-rows-3 gap-7">
         <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
           <BentoCard
-            src="videos/feature-2.mp4"
+            src="https://pub-cc5065c69cf847a6b697aeefac2a01df.r2.dev/feature-2.mp4"
             title={
               <>
                 Age<b>n</b>t<b>s</b>
@@ -155,7 +156,7 @@ Outsmart opponents across 13 rounds in Competitive, Unranked, Deathmatch, and Sp
 
         <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
           <BentoCard
-            src="videos/feature-3.mp4"
+            src="https://pub-cc5065c69cf847a6b697aeefac2a01df.r2.dev/feature-3.mp4"
             title={
               <>
                 A<b>b</b>ilities
@@ -168,7 +169,7 @@ Outsmart opponents across 13 rounds in Competitive, Unranked, Deathmatch, and Sp
 
         <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
           <BentoCard
-            src="videos/feature-4.mp4"
+            src="https://pub-cc5065c69cf847a6b697aeefac2a01df.r2.dev/feature-4.mp4"
             title={
               <>
                 M<b>a</b>ps
@@ -181,7 +182,7 @@ Outsmart opponents across 13 rounds in Competitive, Unranked, Deathmatch, and Sp
         
         <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
           <BentoCard
-            src="videos/feature-5.mp4"
+            src="https://pub-cc5065c69cf847a6b697aeefac2a01df.r2.dev/feature-5.mp4"
             title={
               <>
                 pl<b>a</b>y <b>m</b>odes
@@ -194,7 +195,7 @@ Outsmart opponents across 13 rounds in Competitive, Unranked, Deathmatch, and Sp
         
         <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
           <BentoCard
-            src="videos/feature-6.mp4"
+            src="https://pub-cc5065c69cf847a6b697aeefac2a01df.r2.dev/feature-6.mp4"
             title={
               <>
                 p<b>r</b>e<b>m</b>ium We<b>a</b>pons Skin<b>s</b>
